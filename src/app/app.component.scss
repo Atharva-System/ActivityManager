@@ -1,0 +1,21 @@
+.page{
+  background-color: #F5F5FB;
+  min-height: 100%;
+  height: auto;
+}
+
+.page-section{
+  padding: 1rem 10rem !important;
+}
+
+
+@media screen and (max-width: 900px) {
+  .page-section{
+    padding: 1rem 0 !important;
+  }
+}
+
+
+.card-title{
+
+}

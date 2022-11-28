@@ -1,27 +1,25 @@
 # ActivityManager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## libraries used in project are
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Rxjs
+2. Ngrx
+3. bootstrap
 
-## Build
+## Reason to use rxjs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Rxjs is used to improve response time and reduce code redunduncy and to reduce the chances of data lickage. I have implemented the observables and behavior subject to maintain response and used pip operator and map function to bind the data between observables.
 
-## Running unit tests
+## Reason to use ngrx
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Used ngrx to make code work smoother and looks good.
 
-## Running end-to-end tests
+## Reason to use bootstrap
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Used bootstrap to make web page look nice, as no need to create initial styling and i can use bootstrap classes easily.

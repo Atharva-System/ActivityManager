@@ -1,0 +1,22 @@
+<div class="search-result my-3" *ngrxLet="collapse$ as collapse">
+  <div class="card card-body items accordion accordion-flush" #searchAccordian *ngrxLet="activity$ as activity">
+    <h2 class="card-subtitle m-4">Search Result</h2>
+    <div class="accordion-item item-section" *ngIf="activity != null && activity.activity != ''">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          {{ activity.activity }}
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" [class.collapse]="'show'"   [ngClass]="{'hide':!collapse}" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h2 class="card-title">{{activity.type}} Activity</h2>
+          <h2 class="card-subtitle">{{activity.participants}} Participants</h2>
+          <div class="w-full d-flex gap-10 justify-space-between">
+            <h2 class="card-price">{{activity.price}} Price</h2>
+            <h2 class="card-price">{{activity.accessibility}} Rate</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="card card-body search-card">
+  <form class="form row" [formGroup]="activityForm" (ngSubmit)="search()">
+    <div class="form-group col-lg-3 p-1">
+      <label>Type</label>
+      <input type="text" class="form-control" placeholder="Type" formControlName="type" title="Type">
+    </div>
+    <div class="form-group col-lg-3 p-1">
+      <label>Participants</label>
+      <input type="text" class="form-control" placeholder="Number of participants" formControlName="participants" title="Participants">
+    </div>
+    <div class="form-group col-lg-3 p-1">
+      <label>Relative Price</label>
+      <input type="text" class="form-control" placeholder="Relative Price" formControlName="price" title="Relative Price">
+    </div>
+    <div class="form-group col-lg-3 p-1">
+      <label>Accessibility Range</label>
+      <input type="text" class="form-control" placeholder="Accessibility Range" formControlName="accessibility" title="Accessibility Range">
+    </div>
+    <div class="col-lg-4 p-1">
+      <button class="btn btn-primary btn-block" type="submit">Search</button>
+    </div>
+  </form>
+</div>
